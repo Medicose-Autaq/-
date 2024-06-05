@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "poppins", sans-serif ; */
+
+}
+.body{
   font-family: "poppins", sans-serif ;
 
 }
@@ -28,11 +32,12 @@
   margin-bottom: 20px;
 }
 .down{
+ 
  /* flex-wrap: wrap; */
   justify-content: center;
  display: flex;
-  width: 97%;
-float:  left;
+  /* width: 97%; */
+/* float:  left; */
   height: fit-content;
   margin-bottom: 50px;
   /* padding-left: 25px; */
@@ -44,7 +49,7 @@ float:  left;
   /* flex-direction: column; */
   /* justify-content: space-between; */
   float: left;
-  width: 100%;
+  width: 96%;
   margin-left: 15px;
   margin-bottom: 20px;
   /* background-color: #390099; */
@@ -57,10 +62,13 @@ float:  left;
   position: relative;
 }
 #study{  
-  width: 80%;
+  font-family: "poppins", sans-serif ;
+  width: 60vh;
+  flex-wrap: wrap;
+  /* width: 80%; */
   float: left;
   display: flex;
-  height: fit-content;
+  height: 50vh;
   flex-direction: column;
   align-items: flex-start;
   /* background-color: rgb(239, 237, 237); */
@@ -72,7 +80,7 @@ color: black;
   border-right: none;
   /* position: absolute; */
   left: 23rem;
-  margin-left: 30vh;
+  /* margin-left: 30vh; */
   border-radius: 10px;
  /* margin-left: 60px; */
  margin-top: 30px;
@@ -80,14 +88,15 @@ color: black;
  box-shadow: 0px 6px 6px rgb(0,0,0, 0.8);
  /* bottom: 0; */
  margin-bottom: 50px;
- padding-left: 150px;
+ /* padding-left: 150px; */
  padding-bottom: 30px;
 
 }
 #wards1{
-  top: 10vh;
+  /* top: -35vh; */
   left: 8vh;
   width: 14%;
+  /* width: 100%; */
   float: left;
   display: flex;
   align-items: center;
@@ -145,7 +154,7 @@ color: black;
 } */
 
 nav{
-  /* width: 100%; */
+  width: 100%;
   height: 100px;
   background-color: #0C0C0C;
   margin-bottom: 60px;
@@ -164,19 +173,21 @@ nav{
   align-items: center; */
   /* margin-top: 5px;
   margin-left: 15px; */
-  height: 55px;
-  padding: 4px;
-  font-size: 36px;
+  height: 70px;
+  padding:10px;
+  padding-right: 20px;
+  font-size: 40px;
+  /* font-weight: bold; */
+  font-family: 'whisper',cursive !important;
   font-weight: bold;
-
-
   /* text-align: center;
   font-family: arial; */
   background-color: #9E0059;
   color: white;
-  border-radius: 8px;
+  border-radius: 50px;
   /* border: 2px solid white; */
-  width: 14rem;
+  width:4.5rem;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,13 +202,13 @@ nav{
   gap: 18px;
 }
 .top button{
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
   color: white;
   background-color: #9E0059;
   flex-shrink: 0;
   height: 42px;
-  width: 6rem;
+  width: 5rem;
   border: none;
   border-radius: 6px;
   transition: all 0.3s;
@@ -244,6 +255,7 @@ aside{
 
 }
 main{
+  font-family: 'poppins',Arial;
   flex-wrap: wrap;
   /* display: flex;
   flex-wrap: wrap; */
@@ -270,9 +282,10 @@ main h2 {
   margin-top: 5px;
   height: 38vh;
   width: 38vh;
+
 }
 .wards{
-  min-width: 400px;
+  /* min-width: 400px; */
   width: 33%;
   float: left;
   display: flex;
@@ -281,8 +294,8 @@ main h2 {
   /* flex-shrink: 0; */
   border-radius: 10px;
   margin-top: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -290,7 +303,8 @@ main h2 {
   /* padding-left: 20px;
   padding-left: 20px; */
   box-shadow: 4px 6px 6px rgb(0,0,0, 0.8);
-
+  font-family: 'poppins',Arial;
+  
   
 }
 .btn{
@@ -299,6 +313,8 @@ main h2 {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  font-family: 'poppins',Arial;
+
 }
 .newbtn{
   font-size: 22px;
@@ -376,7 +392,7 @@ main h2 {
 }
 .study{ 
   flex-shrink: 0;
- min-width: 400px;
+ /* min-width: 400px; */
   width: 31%;
   float: left;
   display: flex;
@@ -405,14 +421,54 @@ main h2 {
  padding: 5px;
  
 }
-@media screen and (max-width:600px){ aside,main,.wards,.study,#study{width: 100%;};
+@media screen and (max-width:600px)
+{.wards{width: 350px;
+margin-left: 10px;
+margin-right: 10px;}
+
+.study{width: 350px;
+/* margin-bottom: 25vh; */
+}}
+
+
+
+
+@media screen and (max-width:600px){ aside,main{
+  width: 350px;
+}
+#study{width: 350px;
+  margin-bottom: 10vh;
+  margin-top: 20vh;
+  /* border-top: none; */
+  padding-top: 20px;
+}
+
 
 }
 @media screen and (max-width:600px) {
   #wards, #wards1 {
     width: 67%;
   }
+ #wards, #wards1 img{
+    height: 30vh;
+    width: 30vh;
+    
+  }
+  #wards1, #wards img{
+    height: 30vh;
+    width: 30vh;
 
+  }
+  #wards{
+    margin: 0;
+    margin-top: 30vh;
+    top: -37vh;
+  }
+  #wards1{
+    margin: 0;
+    margin-top: 30vh;
+    top: -37vh;
+  }
 }
 @media screen and (max-width:600px) {
   #foot {
@@ -422,6 +478,7 @@ main h2 {
 }
 @media screen and (max-width:600px) {
   .down {
+    width: 80px;
     flex-direction: column;
   }
 
@@ -435,8 +492,24 @@ aside{
  }}
  @media screen and (max-width:600px){
   .down{
-   margin-right: 20px;
+    padding-right: 30px;
+     /* width: 600px; */
+   /* margin-right: 20px; */
    }}
+   @media screen and (max-width:600px){
+    .content img{
+     
+      height: 32vh;
+   width: 32vh;
+     }}
+     @media screen and (max-width:600px){
+      .content {
+        margin-left: 20px;
+        height: 40vh;
+     width: 40vh;
+       }}
+
+  
    /* @media screen and (max-width:600px){
     .content img, .content{
      height: 25vh;
