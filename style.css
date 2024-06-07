@@ -323,7 +323,6 @@ main h2 {
   padding-left: 20px; */
   box-shadow: 4px 6px 6px rgb(0,0,0, 0.8);
   font-family: 'poppins',Arial;
-  height: fit-content;
   position: relative;
   overflow: hidden;
   
