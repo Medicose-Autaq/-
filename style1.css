@@ -14,10 +14,12 @@ body{
  flex-wrap: wrap;
 }
 .cont{
+  min-width: 380px;
   display: flex;
   flex-direction: column;
 }
 .cont h2{
+
   margin-top: 30px;
   padding-right: 30px;
   font-size: 60px;
@@ -163,13 +165,13 @@ body{
   position: relative;
   height: 120px;
   overflow: hidden;
-  width:450px;
+  width:490px;
   /* opacity: 0.9; */
   mask-image: linear-gradient(
     to right,
     rgb(0,0,0,0),
     rgb(0,0,0,1)20%,
-    rgb(0,0,0,1)60%,
+    rgb(0,0,0,1)80%,
     rgb(0,0,0,1)92%,
     rgb(0,0,0,0) 
   );
@@ -193,18 +195,48 @@ body{
 .page{
   position: relative; width: 65%; float: left; margin-bottom: 110px; margin-top: 5vh;
 }
+@media screen and (max-width:1050px) {
+  .page{
+    
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+  }
+  .cont h2{
+    text-align: center;
+  }
+  .cont p{
+    margin-left: 20px;
+  }
+  .main{
+    margin-left: 100px;
+  }
+  .second{
+    margin-left: 60px;
+  }
+  .down{
+    flex-wrap: wrap;
+  }
+  .mainimg{
+    top: -200px;
+    width: 68vh;
+    /* height: 50vh; */
+    /* margin-left: 10vh; */
+  }
+
+}
 @media screen and (max-width:600px) {
   .mainimg{
-    width: 390px;
-    height: 50vh;
-    /* margin-left: 20px; */
-    top: -20px;
+    width: 370px;
+    height: 45vh;
+    margin-left: 20px;
+    top: 0px;
    
   }
   .page{
+    margin-top: 30px;
     margin-left: 20px;
-    margin-bottom: 80px;
-    margin-top: 0;
+    margin-bottom: 50px;
   }
   .divs1,.div{
     width: 100px;
@@ -239,10 +271,10 @@ body{
 }
 @media screen and (max-width:400px) {
   .mainimg{
-    width: 390px;
-    height: 50vh;
-    /* margin-left: 20px; */
-    top: -10px;
+    width: 370px;
+    height: 45vh;
+    margin-left: 20px;
+    top: 20px;
   }
   .divs1,.div{
     width: 100px;
@@ -250,6 +282,7 @@ body{
 .page{
   margin-left: 0;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
  .main{
   width: 300px;
@@ -279,10 +312,10 @@ body{
 }
 @media screen and (max-width:380px) {
   .mainimg{
-    width: 375px;
-    height: 50vh;
-    /* margin-left: 20px; */
-    top: 30px;
+    width: 360px;
+    height: 45vh;
+    margin-left: 0px;
+    top: 20px;
   }
   .divs1,.div{
     width: 100px;
@@ -301,17 +334,20 @@ body{
  }
  .cont{
   display: flex;
-  width: 100%;
+  min-width: 330px;
   justify-content: center;
   /* margin-left: 10px; */
  }
  .cont h2{
+  width: 358px;
    text-align: center;
    margin-top: 0;
    padding: 0;
  }
  .cont p{
- padding-right: 10px;
+  width: 330px;
+
+ padding-right: 0px;
   margin-bottom: 20px;
   margin-left: 15px;
   /* font-weight: bold; */
