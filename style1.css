@@ -204,6 +204,7 @@ body{
   .page{
     margin-left: 20px;
     margin-bottom: 80px;
+    margin-top: 0;
   }
   .divs1,.div{
     width: 100px;
