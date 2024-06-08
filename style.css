@@ -8,6 +8,7 @@
 a{
   text-decoration: none;
 }
+
 .body{
   font-family: "poppins", sans-serif ;
 
@@ -49,7 +50,7 @@ a{
  
  /* flex-wrap: wrap; */
   justify-content: center;
- display: flex;
+ /* display: flex; */
   /* width: 97%; */
 /* float:  left; */
   /* height: fit-content; */
@@ -323,6 +324,7 @@ main h2 {
   padding-left: 20px; */
   box-shadow: 4px 6px 6px rgb(0,0,0, 0.8);
   font-family: 'poppins',Arial;
+  /* height: fit-content; */
   position: relative;
   overflow: hidden;
   
@@ -466,7 +468,9 @@ main h2 {
 margin-left: 12px;
 /* margin-right: 10px; */
 } 
-
+nav{
+  margin-bottom: 0;
+}
 .study{width: 400px;
 margin-left: 12px;
 
