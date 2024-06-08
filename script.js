@@ -32,8 +32,8 @@ let bt12 = document.querySelectorAll('.bt12')
 let bt13 = document.querySelectorAll('.bt13')
 
 
-
-
+const menu = document.getElementById('menu')
+const topb = document.getElementById('topb')
 const more = document.querySelector('.more')
 more.addEventListener('click',()=>{
   
@@ -153,7 +153,22 @@ function en13(){
       if(style.display === 'none'){style.display = 'block'}else{style.display = 'none'}
     })
 }
+const icon = document.getElementById('men')
+topb.addEventListener('click',()=>{
+  if(menu.style.display === 'none'){
+    menu.style.display = 'flex';
+    topb.innerText = 'X';
+    topb.classList.add('ham')
+  }else{
+      menu.style.display = 'none';
+      topb.innerText = ''
+      topb.appendChild(icon)
+      topb.classList.remove('ham')
 
+    }
+}
+
+)
 en1(),en2(),  en3(), en4(), en5(), en6(), en7(),en8(),en9(),en10(),en11(),en12(),en13()
 
 
