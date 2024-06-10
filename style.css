@@ -5,6 +5,14 @@
   /* font-family: "poppins", sans-serif ; */
 
 }
+body{
+  /* background-color: blue */
+;
+  /* background-color: #D2D0BA; */
+  /* background-color: #D6D4A0;
+   */
+   /* background-color: wheat; */
+}
 a{
   text-decoration: none;
 }
@@ -81,6 +89,7 @@ a{
   width: 60vh;
   flex-wrap: wrap;
   /* width: 80%; */
+  z-index: 3;
   float: left;
   display: flex;
   height: 50vh;
@@ -107,7 +116,7 @@ color: black;
  padding-bottom: 30px;
  width: 96%;
   margin-left: 30vh;
-  padding-left: 20vh;
+  padding-left: 30vh;
 
 }
 #wards1{
@@ -115,6 +124,7 @@ color: black;
   /* top: -35vh; */
   left: 8vh;
   width: 14%;
+  
   /* width: 100%; */
   float: left;
   display: flex;
@@ -124,29 +134,61 @@ color: black;
   /* border: 2px solid black; */
   border-radius: 200px;
   margin-left: 50px;
-    background-color: #390099;
+    /* background-color: #390099; */
     height: 30vh;
     margin-top: 55px;
     /* padding: 100px; */
     /* display: flex;
     align-items: center;
     justify-content: center; */
-    box-shadow: 4px 6px 6px rgb(0,0,0, 0.8);
+    /* box-shadow: 4px 6px 6px rgb(0,0,0, 0.8); */
    flex-shrink: 0;
    z-index: 1;
 
 
 }
 #wards img{
-  height: 20vh; width: 20vh;
-  height:22vh; width: 22vh;
-   margin: 20px;
+  filter: saturate(1);
+  /* top: -10px; */
+  position: absolute;
+  /* z-index: 2; */
+  height: 300px; width: 400px;
+  mix-blend-mode: multiply;
+  /* opacity: 0.8;
+  background-image: linear-gradient(
+    to right,
+    rgb(0,0,0,1),
+     
+    rgb(0,0,0,1)30%,
+    rgb(0,0,0,0)90%,
+    rgb(0,0,0,0)
+  ); */
+  /* mask-image: radial-gradient(
+    rgb(0,0,0,0),
+    rgb(0,0,0,1),
+     
+    rgb(0,0,0,1)30%,
+    rgb(0,0,0,0)90%,
+    rgb(0,0,0,0)
+
+    )  ; */
+    margin-right: 60px;
+    margin-left: 40px;
+  /* height:22vh; width: 22vh; */
+   /* margin: 20px;
    margin-left: 30px;
     margin-bottom: 10px;
-     margin-top: 30px;
+     margin-top: 30px; */
+   
 }
 #wards1 img{
-  height: 20vh; width: 20vh;
+  position: absolute;
+  z-index: -2;
+  height: 350px; width: 410px;
+ 
+    
+    margin-right: 60px;
+    margin-left: 40px;
 
 }
 #wards{ 
@@ -155,23 +197,25 @@ color: black;
   justify-content: center;
   align-items: center;
   top: 10vh;
-  left: 8vh;
+  left: 5vh;
   position: absolute;
  width: 14%;
   float: left;
+  /* background-color: black; */
   height: 30vh;
   /* position: absolute; */
   /* display: flex;
+  
   justify-content: center; */
   /* border: 2px solid black; */
     border-radius: 200px;
     margin-left: 50px;
-    background-color: #390099;
+    /* background-color: #390099; */
     margin-top: 50px;
-    box-shadow: 6px 6px 6px rgb(0,0,0, 0.8);
+    /* box-shadow: 6px 6px 6px rgb(0,0,0, 0.8); */
     /* flex-shrink: 0; */
-   z-index: 1;
-
+   /* z-index: -1; */
+  mix-blend-mode: multiply;
 }
 #study h2{
   font-size: 40px;
@@ -214,7 +258,7 @@ nav{
   font-weight: bold;
   /* text-align: center;
   font-family: arial; */
-  background-color: #9E0059;
+  background-color: #0f4b54;
   color: white;
   border-radius: 50px;
   /* border: 2px solid white; */
@@ -237,7 +281,7 @@ nav{
   font-size: 26px;
   font-weight: bold;
   color: white;
-  background-color: #9E0059;
+  background-color: #0f4b54;
   flex-shrink: 0;
   height: 48px;
   width: 6rem;
@@ -319,12 +363,22 @@ main h2 {
 
 }
 .wards{
+ 
   min-width: 340px;
   width: 33%;
   float: left;
   display: flex;
-  background-color: #FF0054
+  background-color: #A0ECD0;
+  background: linear-gradient(
+   125deg,
+    /* white 30%, */
+    #A0ECD0
+    
+  )
   ;
+  /* border: 2px solid black; */
+  /* border-top: none; */
+  /* border: none; */
   /* flex-shrink: 0; */
   border-radius: 10px;
   margin-top: 30px;
@@ -336,12 +390,41 @@ main h2 {
   padding-bottom: 15px;
   /* padding-left: 20px;
   padding-left: 20px; */
-  box-shadow: 4px 6px 6px rgb(0,0,0, 0.8);
+  box-shadow: 2px 2px 8px rgb(0,0,0, 0.6);
+
   font-family: 'poppins',Arial;
   /* height: fit-content; */
   position: relative;
   overflow: hidden;
   
+}
+.study{ 
+  flex-shrink: 0;
+ min-width: 340px;
+  width: 31%;
+  float: left;
+  display: flex;
+  background-color: #A0ECD0;
+  /* background: linear-gradient(
+    125deg,
+     #0f4b54 30%,
+     rgb(0, 0, 0)
+     
+   ); */
+  
+  height: fit-content;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 18px;
+  /* margin-right: 10px; */
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* flex-shrink: 0; */
+  padding-bottom: 15px;
+  box-shadow: 2px 2px 8px rgb(0,0,0, 0.6);
+  position: relative;
+  overflow: hidden;
 }
 .btn{
   display: flex;
@@ -356,7 +439,6 @@ main h2 {
   font-size: 19px;
   font-weight: bold;
   font-style: italic;
-  color: yellow;
   text-decoration: underline;
   height: 50px;
   width: 60px;
@@ -368,7 +450,7 @@ main h2 {
   /* border: 3px solid black;
   box-shadow:  3px 4px 4px rgb(0,0,0,0.6 );
   border-radius: 6px; */
-  background-color: #FF0054;
+  background-color: transparent;
   /* transform: translatey(-10px); */
   transition: all 0.3s;
   display: none;
@@ -390,8 +472,27 @@ main h2 {
 .divs{
   display: flex;
   justify-content: center;
+  align-items: center;
    flex-wrap: wrap;
     width:300px;
+   
+}
+.download{
+  height: 50px;
+  width: 50px;;
+  border-radius: 200px;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+  z-index: 3;
+  box-shadow:  2px 2px 4px rgb(0,0,0,0.6 );
+  font-size: 20px;
+  transition: 0.3s;
+}
+.download:hover{
+  background-color: black;
+  color: white;
+  transform: translateY(5px);
 }
 .move{
 
@@ -432,28 +533,7 @@ main h2 {
  padding: 5px;
 
 }
-.study{ 
-  flex-shrink: 0;
- min-width: 340px;
-  width: 31%;
-  float: left;
-  display: flex;
-  background-color: #FFBD00
-  ;
-  height: fit-content;
-  border-radius: 10px;
-  margin-top: 30px;
-  margin-left: 18px;
-  /* margin-right: 10px; */
-  align-items: center;
-  /* justify-content: center; */
-  flex-direction: column;
-  /* flex-shrink: 0; */
-  padding-bottom: 15px;
-  box-shadow: 4px 4px 6px rgb(0,0,0, 0.8);
-  position: relative;
-  overflow: hidden;
-}
+
 .log{
   margin-top: 10px;
   height: 10vh;
@@ -474,8 +554,8 @@ main h2 {
   cursor: pointer;
   font-size: 20px;
   margin-top: 10px;
-  background-color: #FF0054;
-  color: yellow;
+  background-color: transparent;
+
 }
 .botn{
   font-family: sans-serif;
@@ -484,7 +564,7 @@ main h2 {
   background-color: black;
   /* text-decoration: underline; */
   font-size: 30px;
-  color: white;
+  color: rgb(202, 200, 200);
   /* border: 1px solid black; */
   border: none;
   border-bottom: 1px solid white;
@@ -507,7 +587,7 @@ main h2 {
   font-size: 26px;
   font-weight: bold;
   color: white;
-  background-color: #9E0059;
+  background-color: #1d8494;
   flex-shrink: 0;
   height: 48px;
   width: 6rem;
@@ -519,6 +599,7 @@ main h2 {
 }
 #menu{
   margin-top: 1px; opacity: 0.9; top: 10vh; left: -10vh; width: 100%; height: 400px; display: flex; flex-direction: column; gap: 30px; justify-content: center; align-items: center; background-color: black;
+
 }
 .ham{
   font-size: 25px;
@@ -686,12 +767,17 @@ margin-left: 18px;
   }
   #wards1,#wards{
     height: 30vh;
-    width: 30vh;
+    width: 28vh;
     
   }
   #wards1 img,#wards img{
-    height: 20vh;
-    width: 20vh;
+    position: absolute;
+    z-index: -2;
+    height: 350px; width: 370px;
+    margin-left: 0px;
+      /* margin-top: 100px; */
+      margin-right: 40px;
+      /* margin-left: 40px; */
   }
    /* #wards {
     height: 30vh;
@@ -710,6 +796,29 @@ margin-left: 18px;
     margin-top: 30vh;
     left: 11vh;
     top: -36vh;
+  }
+}
+
+@media screen and (max-width:380px) {
+  #wards1 img,#wards img{
+    position: absolute;
+    z-index: -2;
+    height: 350px; width: 370px;
+    margin-left: 40px;
+      /* margin-top: 100px; */
+      /* margin-right: 40px; */
+      /* margin-left: 40px; */
+  }
+}
+@media screen and (max-width:370px) {
+  #wards1 img,#wards img{
+    position: absolute;
+    z-index: -2;
+    height: 350px; width: 350px;
+    margin-left: 20px;
+      /* margin-top: 100px; */
+      /* margin-right: 40px; */
+      /* margin-left: 40px; */
   }
 }
 @media screen and (max-width:600px) {
