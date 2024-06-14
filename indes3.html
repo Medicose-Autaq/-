@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quiz</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <nav>
+      <div class="logo" ><p  style="font-family: whisper;">M </p></div>
+       <a href="index.html"><button>Home</button></a>
+     
+    </nav>
+ 
+    
+    
+  <main id="main">
+    <div class="container">
+      <h2 >Quiz <div class="time" id="time"></div></h2>
+      <div class="intro" id="intro" >
+        <h3 style="text-decoration: underline;">Ent 1.3</h3>
+  
+        <div><a style="font-size: 20px;" >Bcqs = 41 </a> </div>
+      <div style="display: flex; align-items: center; gap: 5px;">  <i class="fa-solid fa-stopwatch"></i> = <select name="" id="">
+        <option value="" id="option1">15mins</option>
+        <option value="" id="option2">30mins</option>
+        <option value="" id="option3">45mins</option>
+
+      </select></div> 
+      <div class="nest"><button id="start" onclick="startquiz()">Start</button>
+     </div> 
+    
+      </div>
+      <div id="question"></div>
+    <div id="result"></div>
+      <div id="container1">
+        
+        <!-- <button class="btns"></button>
+        <button class="btn">kk</button>
+        <button class="btn"></button>
+        <button class="btn"></button> -->
+       
+
+
+
+
+      </div>
+      <div id="inst" class="inst">
+        Note:
+        <ul>
+        <li>The questions of this quiz are from past papers so the key might not be correct</li>
+          <li>Key of this quiz can be accessed at the end of the test </li>
+          <li>Source file <a href="Ent/ENT BCQS 4th YEAR MBBS LUMHS By RAJA ALTAF.pdf">Ent/ENT BCQS 4th YEAR MBBS LUMHS By RAJA ALTAF</a></li>
+        </ul>
+    </div>
+      <div id="nest" style="display: none; justify-content: center;margin-top: 20px; margin-bottom: 20px; flex-direction: column;
+      align-items: center; gap: 20px;"><button id="nestbtn" ></button>
+        <!-- <div class="inst">
+          Note: Once an option is selected it can not be changed
+          
+      </div> -->
+     
+         
+        
+       </div>
+      
+    
+  </main>
+  <div class="popup" id="pop">
+    <h1 id="res">Result: </h1>
+
+    <div id="give"></div>
+    <button class="bt" id="bot">Try again</button>
+  </div>
+  
+  <!-- <div class="foot"></div> -->
+  <script src="scripts/script4.js"></script>
+ 
+</body>
+</html>
